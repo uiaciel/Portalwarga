@@ -7,4 +7,12 @@ masih tahap pengembangan, belum final/rilis
 uiaciel@gmail.com
 
 Menggunakan Laravel 7
+CRUD
+- ARTIKEL
+- KATEGORI TAG
+- KOMENTAR
+
+TODO
+- API
+- TESTING DATABASE
 
