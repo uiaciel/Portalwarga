@@ -14,7 +14,7 @@ class AdminController extends Controller
     public function index()
     {
         //
-        return view ('layouts.master');
+        return view ('artikel.index');
     }
 
     /**
@@ -24,7 +24,7 @@ class AdminController extends Controller
      */
     public function create()
     {
-        //
+        return view ('artikel.create');
     }
 
     /**
