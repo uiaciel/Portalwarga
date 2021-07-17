@@ -24,3 +24,5 @@ Route::get('/admincp', 'AdminController@index')->name('admincp');
 Route::get('/admincp/artikel/create', 'AdminController@create')->name('admincp.create');
 Route::get('/admincp/artikel', 'AdminController@index')->name('admincp.index');
 Route::get('/admincp/kategori', 'KategoriController@index')->name('kategori.index');
+
+Route::resource('Artikel', 'ArtikelController');

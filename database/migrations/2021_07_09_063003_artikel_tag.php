@@ -13,11 +13,10 @@ class ArtikelTag extends Migration
      */
     public function up()
     {
-        Schema::create('artikeltag', function (Blueprint $table) {
-            $table->id();
-            $table->integer('artikel_id')->unsigned()->nullable();
-            $table->foreign('artikel_id')->references('id')->on('artikel')->onDelete('cascade');
-            $table->integer('tag_id')->unsigned()->nullable();
+        Schema::create('artikel_tag', function (Blueprint $table) {
+            $table->unsignedBigInteger('artikel_id')->unsigned()->nullable();
+            $table->foreign('artikel_id')->references('id')->on('artikels')->onDelete('cascade');
+            $table->unsignedBigInteger('tag_id')->unsigned()->nullable();
             $table->foreign('tag_id')->references('id')->on('tags')->onDelete('cascade');
             $table->timestamps();
         });

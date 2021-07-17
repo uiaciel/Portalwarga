@@ -16,13 +16,15 @@
                 </tr>
             </thead>
             <tbody>
+                @foreach($artikel as $artikel)
                 <tr>
-                    <th scope="row">1</th>
+                    <th scope="row">{{$artikel->id}}</th>
                     <td><h5>Surya</h5> <p>3 menit lalu</p></td>
-                    <td><h5>Tips agar rumah terlihat bersih dan rapi</h5><p>Halo semuanya, kali ini kita akan membahas....</p></td>
+                    <td><h5>{{$artikel->judul}} </h5><p>Halo semuanya, kali ini kita akan membahas....</p></td>
                     <td><div class="mb-2 mr-2 badge badge-primary">Terpublish</div><div class="mb-2 mr-2 badge badge-success">Headline</div></td>
                     <td><button class="mb-2 mr-2 btn btn-primary">Edit</button></td>
                 </tr>
+                @endforeach
                 
             </tbody>
         </table>
